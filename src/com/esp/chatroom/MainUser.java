@@ -7,7 +7,7 @@ import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.UnknownHostException;
 
-public class Main {
+public class MainUser {
 	
 	public static void main(String[] args) throws UnknownHostException {
 		try {
