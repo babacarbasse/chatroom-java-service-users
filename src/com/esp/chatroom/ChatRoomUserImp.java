@@ -26,7 +26,7 @@ public class ChatRoomUserImp extends UnicastRemoteObject implements ChatRoomUser
 
 	@Override
 	public ArrayList<String> unsubscribe(String pseudo) throws RemoteException {
-		String message = pseudo+" disconnected";
+		String message = pseudo + " disconnected";
 		System.out.println(message);
 		if(utilisateurs.indexOf(pseudo) != -1) {
 			utilisateurs.remove(pseudo);
