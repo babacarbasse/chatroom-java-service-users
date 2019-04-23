@@ -34,5 +34,14 @@ public class ChatRoomUserImp extends UnicastRemoteObject implements ChatRoomUser
 		System.out.println( pseudo + " leave");
 		return this.utilisateurs;
 	}
+	
+	@Override
+	public Boolean isUserConnected(String pseudo) throws RemoteException {
+		Boolean isConnected = false;
+		if(utilisateurs.indexOf(pseudo) != -1) {
+			isConnected = true;
+		}
+		return isConnected;
+	}
 
 }
